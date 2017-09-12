@@ -14,7 +14,7 @@ class Rating extends Model
     /**
      * @var array
      */
-    protected $fillable = ['rating', 'ratingable_id' , 'ratingable_type' , 'author_id', 'author_type'];
+    protected $fillable = ['rating', 'title', 'body', 'in', 'ratingable_id' , 'ratingable_type' , 'author_id', 'author_type'];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\MorphTo

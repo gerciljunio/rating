@@ -10,6 +10,9 @@ class CreateRatingsTable extends Migration
         Schema::create('ratings', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('rating');
+            $table->string('title')->nullable();
+            $table->string('in')->nullable();
+            $table->string('category')->nullable();
             $table->morphs('ratingable');
             $table->morphs('author');
             $table->timestamps();
